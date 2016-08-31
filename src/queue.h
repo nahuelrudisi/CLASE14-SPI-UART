@@ -9,7 +9,7 @@
 #define QUEUE_H_
 
 
-typedef struct  {
+typedef struct {
 	int frente;
 	int fondo;
 	int tamanio;
@@ -19,7 +19,7 @@ typedef struct  {
 
 void queue_init(Queue *q);
 int queue_encolar(Queue *q, char d);
-char queue_desencolar(Queue *q, int *err);
-
+char queue_desencolar(Queue *q);
+int incrementar(int n);
 
 #endif /* QUEUE_H_ */

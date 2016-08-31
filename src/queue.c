@@ -27,13 +27,11 @@ int queue_encolar(Queue *q, char d) {
 	return err;
 }
 
-char queue_desencolar(Queue *q, int *err) {
+char queue_desencolar(Queue *q) {
 	char tmp;
-	*err = 1;
 	if (q->tamanio > 0) {
 		tmp = q->datos[q->frente];
 		q->frente = incrementar(q->frente);
-		*err = 0;
 		q->tamanio--;
 	}
 	return tmp;

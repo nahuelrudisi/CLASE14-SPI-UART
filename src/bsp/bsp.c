@@ -5,6 +5,8 @@
  *      Author: Matias Labedz
  */
 #include "bsp.h"
+#include "stm32f4_discovery.h"
+#include "stm32f4_discovery_accelerometer.h"
 
 UART_HandleTypeDef UART3_Handle;
 
